@@ -54,6 +54,7 @@ public class AbrigoService {
             System.out.println(responseBody);
         }
     }
+    //remover o static para poder usar o metodo dispararRequisicaoGet
     private  HttpResponse<String> dispararRequisicaoGet(HttpClient client, String uri) throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(uri))
